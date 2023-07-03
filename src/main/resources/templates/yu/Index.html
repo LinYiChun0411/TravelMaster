@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>景點瀏覽</title>
+</head>
+
+<body>
+	<div th:replace="~{layout/indexHeader}"></div>
+	<main>
+		<div class="container my-5">
+			<!-- Breadcrumb -->
+			<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+				<div class="d-flex justify-content-between align-items-center">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page">景點</li>
+						<li class="breadcrumb-item"><a href="allSpot">全部景點</a></li>
+						<li class="breadcrumb-item"><a href="singleSpot">單一景點</a></li>
+					</ol>
+				</div>
+			</nav>
+			<div class="wrap">
+				<div class="title">
+					<h2>觀光景點</h2>
+				</div>
+				<div class="wrap">
+					<!--TWMAP-->
+					<div class="mapside">
+						<div class="left-side">
+							<p>
+								<strong>想探索的地區：</strong>
+							</p>
+							<div class="btn-group-vertical" role="group"
+								aria-label="regionBtn">
+								<a href="#" title="北部地區" class="btn btn-primary">北部地區</a> <a
+									href="#" title="中部地區" class="btn btn-primary">中部地區</a> <a
+									href="#" title="南部地區" class="btn btn-primary">南部地區</a> <a
+									href="#" title="東部地區" class="btn btn-primary">東部地區</a>
+							</div>
+
+						</div>
+						<div class="right-side">
+							<h3>精選台灣景點</h3>
+							<p>台灣擁有豐富的山川景色，以及清澈的湖泊和河流，被譽為「好山好水」的寶島。山脈縱橫交錯，如太魯閣、阿里山等，提供壯麗的登山、健行和觀景體驗。台灣的山岳還擁有多樣的生態系統，包括珍稀的植物和動物物種，吸引了許多生態愛好者和生物學家。此外，台灣還擁有美麗的湖泊和河流，如日月潭、清境農場、淡水河等，提供了舒緩的休閒環境和水上活動，如划船、釣魚和賞鳥等。這些壯麗的山脈和清澈的水域，使台灣成為自然愛好者和旅遊者的理想目的地，提供了豐富多彩的戶外活動和美麗的風景。</p>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<div th:replace="~{layout/indexFooter}"></div>
+	<script th:inline="javascript">
+</script>
+</body>
+</html>
